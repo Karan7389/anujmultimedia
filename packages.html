@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
@@ -146,7 +146,7 @@ footer::before{content:'';position:absolute;top:-200px;left:50%;transform:transl
 .reveal.visible{opacity:1;transform:translateY(0)}
 </style></head><body>
 <nav id="navbar">
-  <a href="index.html" class="nav-logo"><div class="nav-logo-icon">A</div><div class="nav-logo-text"><div class="name">Anuj</div><div class="sub">Multimedia</div></div></a>
+  <a href="index.html" class="nav-logo"><img src="logo.png" alt="Anuj Multimedia" style="height:46px;width:auto;" /></a>
   <ul class="nav-links">
     <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="portfolio.html">Portfolio</a></li>
     <li><a href="services.html">Services</a></li><li><a href="packages.html" class="active">Packages</a></li>
@@ -312,7 +312,7 @@ footer::before{content:'';position:absolute;top:-200px;left:50%;transform:transl
 <footer>
   <div class="footer-grid">
     <div class="footer-brand">
-      <a href="index.html" class="nav-logo"><div class="nav-logo-icon">A</div><div class="nav-logo-text"><div class="name">Anuj</div><div class="sub">Multimedia</div></div></a>
+      <a href="index.html" class="nav-logo"><img src="logo.png" alt="Anuj Multimedia" style="height:46px;width:auto;" /></a>
       <p>We capture moments, emotions and memories that last a lifetime.</p>
       <div class="footer-socials"><a href="#" class="social-btn">f</a><a href="#" class="social-btn">in</a><a href="#" class="social-btn">▶</a><a href="#" class="social-btn">𝕏</a></div>
     </div>
@@ -321,7 +321,7 @@ footer::before{content:'';position:absolute;top:-200px;left:50%;transform:transl
     <div class="footer-col"><h4>Contact Info</h4>
       <div class="footer-contact-item"><span class="ico">📞</span><span>+91 12345 67890</span></div>
       <div class="footer-contact-item"><span class="ico">✉️</span><span>hello@anujmultimedia.com</span></div>
-      <div class="footer-contact-item"><span class="ico">📍</span><span>123, Dream Street, Mumbai,<br>Maharashtra – 400001</span></div>
+      <div class="footer-contact-item"><span class="ico">📍</span><span>Kotalada, Dhanbad,<br>Jharkhand, India</span></div>
     </div>
   </div>
   <div class="footer-bottom">
@@ -340,3 +340,4 @@ for(let i=0;i<14;i++){const p=document.createElement('div');p.className='petal';
 const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');});},{threshold:.08});
 document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=`${(i%4)*.1}s`;obs.observe(el);});
 </script></body></html>
+

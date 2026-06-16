@@ -52,22 +52,18 @@
       border-bottom: 1px solid rgba(201,150,58,0.18);
     }
     .nav-logo {
-      display: flex; align-items: center; gap: 12px; text-decoration: none;
+      display: flex; align-items: center; text-decoration: none;
+    }
+    .nav-logo img {
+      height: 46px;
+      width: auto;
+      object-fit: contain;
+      filter: brightness(1.05);
     }
     .nav-logo-icon {
-      width: 42px; height: 42px;
-      border: 1.5px solid var(--gold);
-      border-radius: 50%;
-      display: flex; align-items: center; justify-content: center;
-      color: var(--gold-light); font-family: 'Playfair Display', serif; font-style: italic;
-      font-size: 19px; font-weight: 700;
-      background: radial-gradient(circle, rgba(201,150,58,0.15), transparent);
+      display: none;
     }
-    .nav-logo-text { line-height: 1.05; }
-    .nav-logo-text .name {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 21px; font-weight: 600; color: var(--white); letter-spacing: 1px;
-    }
+    .nav-logo-text { display: none; }
     .nav-logo-text .sub {
       font-size: 9px; color: var(--gold-light); letter-spacing: 4px; text-transform: uppercase;
     }
@@ -452,8 +448,8 @@
       background: var(--cream); padding: 90px 60px;
     }
     .team-grid {
-      display: grid; grid-template-columns: repeat(4, 1fr);
-      gap: 26px; max-width: 1200px; margin: 0 auto;
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 26px; max-width: 1000px; margin: 0 auto;
     }
     .team-card {
       background: var(--white); border-radius: 18px; overflow: hidden;
@@ -1139,24 +1135,20 @@
 
 <!-- NAVBAR -->
 <nav id="navbar">
-  <a href="#" class="nav-logo">
-    <div class="nav-logo-icon">A</div>
-    <div class="nav-logo-text">
-      <div class="name">Anuj</div>
-      <div class="sub">Multimedia</div>
-    </div>
+  <a href="index.html" class="nav-logo">
+    <img src="logo.png" alt="Anuj Multimedia" />
   </a>
   <ul class="nav-links">
-    <li><a href="#hero">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#portfolio">Portfolio</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#packages">Packages</a></li>
-    <li><a href="#team">Our Team</a></li>
-    <li><a href="#cta">Contact</a></li>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="packages.html">Packages</a></li>
+    <li><a href="team.html">Our Team</a></li>
+    <li><a href="contact.html">Contact</a></li>
   </ul>
   <div class="nav-right">
-    <a href="#cta" class="btn-book">Book Now ↗</a>
+    <a href="contact.html" class="btn-book">Book Now ↗</a>
     <div class="hamburger" onclick="toggleMenu()">
       <span></span><span></span><span></span>
     </div>
@@ -1166,16 +1158,16 @@
 <!-- MOBILE MENU -->
 <div class="mobile-menu" id="mobileMenu">
   <button class="mobile-close" onclick="toggleMenu()">✕</button>
-  <a href="#hero" onclick="toggleMenu()">Home</a>
-  <a href="#about" onclick="toggleMenu()">About</a>
-  <a href="#portfolio" onclick="toggleMenu()">Portfolio</a>
-  <a href="#services" onclick="toggleMenu()">Services</a>
-  <a href="#packages" onclick="toggleMenu()">Packages</a>
-  <a href="#team" onclick="toggleMenu()">Our Team</a>
-  <a href="#testimonials" onclick="toggleMenu()">Testimonials</a>
-  <a href="#faq" onclick="toggleMenu()">FAQ</a>
-  <a href="#cta" onclick="toggleMenu()">Contact</a>
-  <a href="#cta" class="btn-book" onclick="toggleMenu()">Book Now ↗</a>
+  <a href="index.html" onclick="toggleMenu()">Home</a>
+  <a href="about.html" onclick="toggleMenu()">About</a>
+  <a href="portfolio.html" onclick="toggleMenu()">Portfolio</a>
+  <a href="services.html" onclick="toggleMenu()">Services</a>
+  <a href="packages.html" onclick="toggleMenu()">Packages</a>
+  <a href="team.html" onclick="toggleMenu()">Our Team</a>
+  <a href="contact.html" onclick="toggleMenu()">Testimonials</a>
+  <a href="contact.html" onclick="toggleMenu()">FAQ</a>
+  <a href="contact.html" onclick="toggleMenu()">Contact</a>
+  <a href="contact.html" class="btn-book" onclick="toggleMenu()">Book Now ↗</a>
 </div>
 
 <!-- HERO -->
@@ -1647,12 +1639,8 @@
 <footer>
   <div class="footer-grid">
     <div class="footer-brand">
-      <a href="#" class="nav-logo">
-        <div class="nav-logo-icon">A</div>
-        <div class="nav-logo-text">
-          <div class="name">Anuj</div>
-          <div class="sub">Multimedia</div>
-        </div>
+      <a href="index.html" class="nav-logo">
+        <img src="logo.png" alt="Anuj Multimedia" style="height:46px;width:auto;filter:brightness(1.1)" />
       </a>
       <p>We capture moments, emotions and memories that last a lifetime.</p>
       <div class="footer-socials">
@@ -1665,26 +1653,24 @@
     <div class="footer-col">
       <h4>Quick Links</h4>
       <ul>
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#packages">Packages</a></li>
-        <li><a href="#team">Our Team</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#cta">Contact Us</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
       </ul>
     </div>
     <div class="footer-col">
       <h4>Our Services</h4>
       <ul>
-        <li><a href="#">Weddings</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">Birthdays</a></li>
-        <li><a href="#">Pre Wedding</a></li>
-        <li><a href="#">Corporate Shoots</a></li>
-        <li><a href="#">Videography</a></li>
-        <li><a href="#">All Shoots</a></li>
+        <li><a href="services.html">Weddings</a></li>
+        <li><a href="services.html">Events</a></li>
+        <li><a href="services.html">Birthdays</a></li>
+        <li><a href="services.html">Pre Wedding</a></li>
+        <li><a href="services.html">Corporate Shoots</a></li>
+        <li><a href="services.html">Videography</a></li>
       </ul>
     </div>
     <div class="footer-col">
@@ -1699,7 +1685,7 @@
       </div>
       <div class="footer-contact-item">
         <span class="ico">📍</span>
-        <span>123, Dream Street, Mumbai,<br>Maharashtra – 400001</span>
+        <span>Kotalada, Dhanbad,<br>Jharkhand, India</span>
       </div>
     </div>
   </div>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
@@ -54,7 +54,7 @@ nav.scrolled{padding:12px 60px;background:rgba(21,16,13,.95);backdrop-filter:blu
 /* TEAM FLIP CARDS */
 .team-section{padding:110px 60px;background:var(--cream);position:relative;overflow:hidden}
 .team-section::before{content:'';position:absolute;top:-100px;left:-100px;width:350px;height:350px;background:radial-gradient(ellipse,rgba(201,150,58,.06),transparent 70%)}
-.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;max-width:1200px;margin:0 auto}
+.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;max-width:1000px;margin:0 auto}
 /* 3D FLIP */
 .flip-card{height:460px;perspective:1200px;cursor:pointer}
 .flip-inner{position:relative;width:100%;height:100%;transition:transform .7s cubic-bezier(.4,0,.2,1);transform-style:preserve-3d}
@@ -125,7 +125,7 @@ footer::before{content:'';position:absolute;top:-200px;left:50%;transform:transl
 .reveal.visible{opacity:1;transform:translateY(0)}
 </style></head><body>
 <nav id="navbar">
-  <a href="index.html" class="nav-logo"><div class="nav-logo-icon">A</div><div class="nav-logo-text"><div class="name">Anuj</div><div class="sub">Multimedia</div></div></a>
+  <a href="index.html" class="nav-logo"><img src="logo.png" alt="Anuj Multimedia" style="height:46px;width:auto;" /></a>
   <ul class="nav-links">
     <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="portfolio.html">Portfolio</a></li>
     <li><a href="services.html">Services</a></li><li><a href="packages.html">Packages</a></li>
@@ -167,90 +167,45 @@ footer::before{content:'';position:absolute;top:-200px;left:50%;transform:transl
     <div class="flip-card reveal">
       <div class="flip-inner">
         <div class="flip-front">
-          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&q=80" alt="Anuj Verma"/>
-          <div class="flip-front-info"><span class="flip-role">Founder</span><div class="flip-name">Anuj Verma</div></div>
+          <img src="ram-image.jpeg" alt="Ram Anuj"/>
+          <div class="flip-front-info"><span class="flip-role">Founder</span><div class="flip-name">Ram Anuj</div></div>
         </div>
         <div class="flip-back">
-          <div class="back-role">Founder & Lead Photographer</div>
-          <div class="back-name">Anuj Verma</div>
-          <p class="back-bio">5+ years behind the lens. Anuj specialises in candid wedding storytelling and emotion-led portraits. His philosophy: "The best photos happen when people forget the camera exists."</p>
+          <div class="back-role">Founder & Lead Videographer</div>
+          <div class="back-name">Ram Anuj</div>
+          <p class="back-bio">5+ years behind the lens. Ram specialises in candid wedding storytelling and emotion-led portraits. His philosophy: "The best photos happen when people forget the camera exists."</p>
           <div class="back-skills"><span class="skill-tag">Wedding</span><span class="skill-tag">Candid</span><span class="skill-tag">Portraits</span></div>
-          <div class="back-socials"><a href="#">in</a><a href="#">📷</a><a href="#">f</a></div>
+          <div class="back-socials"><a href="#">in</a><a href="#">f</a></div>
         </div>
       </div>
     </div>
     <div class="flip-card reveal">
       <div class="flip-inner">
         <div class="flip-front">
-          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&q=80" alt="Riya Kapoor"/>
-          <div class="flip-front-info"><span class="flip-role">Cinematographer</span><div class="flip-name">Riya Kapoor</div></div>
+          <img src="pappu.jpeg" alt="Pappu Kumar"/>
+          <div class="flip-front-info"><span class="flip-role">Cinematographer</span><div class="flip-name">Pappu Kumar</div></div>
         </div>
         <div class="flip-back">
           <div class="back-role">Lead Cinematographer</div>
-          <div class="back-name">Riya Kapoor</div>
-          <p class="back-bio">Trained in documentary filmmaking, Riya brings a cinematic, story-driven touch to every wedding film. Her films don't just document — they make you relive every feeling.</p>
+          <div class="back-name">Pappu Kumar</div>
+          <p class="back-bio">Crafts cinematic wedding and event films with a documentary touch and a love for natural light. His films don't just document — they make you relive every feeling.</p>
           <div class="back-skills"><span class="skill-tag">Cinematic Films</span><span class="skill-tag">Drone</span><span class="skill-tag">Colour Grading</span></div>
-          <div class="back-socials"><a href="#">in</a><a href="#">📷</a><a href="#">▶</a></div>
+          <div class="back-socials"><a href="#">in</a><a href="#">▶</a></div>
         </div>
       </div>
     </div>
     <div class="flip-card reveal">
       <div class="flip-inner">
         <div class="flip-front">
-          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500&q=80" alt="Karan Mehta"/>
-          <div class="flip-front-info"><span class="flip-role">Photographer</span><div class="flip-name">Karan Mehta</div></div>
+          <img src="shubham.jpeg" alt="Shubham Kumar"/>
+          <div class="flip-front-info"><span class="flip-role">Photographer</span><div class="flip-name">Shubham Kumar</div></div>
         </div>
         <div class="flip-back">
           <div class="back-role">Event & Portrait Photographer</div>
-          <div class="back-name">Karan Mehta</div>
-          <p class="back-bio">Quick on his feet and always in the right place at the right time. Karan is known for capturing split-second expressions and the unexpected moments that mean the most.</p>
-          <div class="back-skills"><span class="skill-tag">Events</span><span class="skill-tag">Corporate</span><span class="skill-tag">Action</span></div>
-          <div class="back-socials"><a href="#">in</a><a href="#">📷</a><a href="#">f</a></div>
-        </div>
-      </div>
-    </div>
-    <div class="flip-card reveal">
-      <div class="flip-inner">
-        <div class="flip-front">
-          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=500&q=80" alt="Sana Iyer"/>
-          <div class="flip-front-info"><span class="flip-role">Editor</span><div class="flip-name">Sana Iyer</div></div>
-        </div>
-        <div class="flip-back">
-          <div class="back-role">Lead Editor & Retoucher</div>
-          <div class="back-name">Sana Iyer</div>
-          <p class="back-bio">Sana is the magic that happens after the shoot. Meticulous and artistic, she transforms every frame into a timeless work of art — colour, tone, and soul in perfect balance.</p>
-          <div class="back-skills"><span class="skill-tag">Retouching</span><span class="skill-tag">Colour</span><span class="skill-tag">Albums</span></div>
-          <div class="back-socials"><a href="#">in</a><a href="#">📷</a><a href="#">𝕏</a></div>
-        </div>
-      </div>
-    </div>
-    <div class="flip-card reveal">
-      <div class="flip-inner">
-        <div class="flip-front">
-          <img src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=500&q=80" alt="Arjun Singh"/>
-          <div class="flip-front-info"><span class="flip-role">Drone Operator</span><div class="flip-name">Arjun Singh</div></div>
-        </div>
-        <div class="flip-back">
-          <div class="back-role">Aerial Cinematographer</div>
-          <div class="back-name">Arjun Singh</div>
-          <p class="back-bio">Licensed drone pilot and aerial filmmaker. Arjun adds breathtaking cinematic scale to every project — swooping through venues and landscapes with precision and creative vision.</p>
-          <div class="back-skills"><span class="skill-tag">Drone</span><span class="skill-tag">Aerial</span><span class="skill-tag">FPV</span></div>
-          <div class="back-socials"><a href="#">in</a><a href="#">📷</a><a href="#">▶</a></div>
-        </div>
-      </div>
-    </div>
-    <div class="flip-card reveal">
-      <div class="flip-inner">
-        <div class="flip-front">
-          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=500&q=80" alt="Priya Desai"/>
-          <div class="flip-front-info"><span class="flip-role">Production</span><div class="flip-name">Priya Desai</div></div>
-        </div>
-        <div class="flip-back">
-          <div class="back-role">Production Assistant</div>
-          <div class="back-name">Priya Desai</div>
-          <p class="back-bio">The calm, organised force behind every successful shoot. Priya coordinates logistics, manages timelines, and ensures every client feels looked after from booking to delivery.</p>
-          <div class="back-skills"><span class="skill-tag">Coordination</span><span class="skill-tag">Lighting</span><span class="skill-tag">Client Care</span></div>
-          <div class="back-socials"><a href="#">in</a><a href="#">📷</a><a href="#">f</a></div>
+          <div class="back-name">Shubham Kumar</div>
+          <p class="back-bio">Quick on his feet and always in the right place at the right time. Known for capturing split-second expressions and the unexpected moments that mean the most.</p>
+          <div class="back-skills"><span class="skill-tag">Events</span><span class="skill-tag">Portraits</span><span class="skill-tag">Corporate</span></div>
+          <div class="back-socials"><a href="#">in</a><a href="#">f</a></div>
         </div>
       </div>
     </div>
@@ -295,7 +250,7 @@ footer::before{content:'';position:absolute;top:-200px;left:50%;transform:transl
 <footer>
   <div class="footer-grid">
     <div class="footer-brand">
-      <a href="index.html" class="nav-logo"><div class="nav-logo-icon">A</div><div class="nav-logo-text"><div class="name">Anuj</div><div class="sub">Multimedia</div></div></a>
+      <a href="index.html" class="nav-logo"><img src="logo.png" alt="Anuj Multimedia" style="height:46px;width:auto;" /></a>
       <p>We capture moments, emotions and memories that last a lifetime.</p>
       <div class="footer-socials"><a href="#" class="social-btn">f</a><a href="#" class="social-btn">in</a><a href="#" class="social-btn">▶</a><a href="#" class="social-btn">𝕏</a></div>
     </div>
@@ -304,7 +259,7 @@ footer::before{content:'';position:absolute;top:-200px;left:50%;transform:transl
     <div class="footer-col"><h4>Contact Info</h4>
       <div class="footer-contact-item"><span class="ico">📞</span><span>+91 12345 67890</span></div>
       <div class="footer-contact-item"><span class="ico">✉️</span><span>hello@anujmultimedia.com</span></div>
-      <div class="footer-contact-item"><span class="ico">📍</span><span>123, Dream Street, Mumbai,<br>Maharashtra – 400001</span></div>
+      <div class="footer-contact-item"><span class="ico">📍</span><span>Kotalada, Dhanbad,<br>Jharkhand, India</span></div>
     </div>
   </div>
   <div class="footer-bottom">
@@ -323,3 +278,4 @@ for(let i=0;i<14;i++){const p=document.createElement('div');p.className='petal';
 const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');});},{threshold:.08});
 document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=`${(i%4)*.1}s`;obs.observe(el);});
 </script></body></html>
+
